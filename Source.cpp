@@ -207,19 +207,17 @@ void register_commands() {
 	};
 
 	commandM["convert"] = [](const std::string& StarterValue1) {
-		Convert(StarterValue1);
-	};
+		Convert(StarterValue1); //function from the DHB.h header
 
 	
 
 	/*the exit function should be the end, do not displace it
 	  the ifdefs are for specific Oses to make it a better cross-platform
-	  This code will probably not be open-source, you need to buy.
-	*/
+   */
 	
 	commandM["exit"] = [](const std::string& nmo){
-		std::cout << "bye\n";
-		exit(0);
+		std::cout << "bye\n"; /*bye*/
+		exit(0); /*exit*/
 	};
 
 
@@ -253,3 +251,5 @@ int main() {
 } 
 
 //end of source.cpp
+/*C++17+*/
+/*If you are looking to edit this, you would need C++17 or the later versions*/
